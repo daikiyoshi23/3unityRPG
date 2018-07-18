@@ -20,6 +20,9 @@ public class TreasureChest : MonoBehaviour {
         if(other.name == "Player")
         {
             anim.SetBool("IsOpen", true);
+            GameObject effectObj = Resources.Load<GameObject>("Effects/ItemEffect");
+            GameObject effect = Instantiate(effectObj, gameObject.transform.position, effectObj.transform.rotation);
+            effect.transform.parent = gameObject.transform;
         }
     }
 }
