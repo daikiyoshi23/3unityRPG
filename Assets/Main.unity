@@ -449,6 +449,42 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_Name
+      value: LeftDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_Name
+      value: RightDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.6427876
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7660445
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.5735764
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8191521
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
   m_IsPrefabParent: 0
@@ -456,6 +492,28 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
   m_PrefabInternal: {fileID: 836898844}
+--- !u!1 &1259513380 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 4fb24ecc99f2a0e4faecb6817b3e34c1, type: 2}
+  m_PrefabInternal: {fileID: 836898844}
+--- !u!95 &1259513381
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1259513380}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41f4c2cf2b13bd546a801e2c60042097, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1891826527
 Prefab:
   m_ObjectHideFlags: 0
