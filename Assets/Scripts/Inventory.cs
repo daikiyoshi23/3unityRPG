@@ -11,4 +11,16 @@ public class Inventory : MonoBehaviour {
         print((int)type);
         itemList.Add((int)type);
     }
+
+    public bool HasItem()
+    {
+        if(itemList.Count >= 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
