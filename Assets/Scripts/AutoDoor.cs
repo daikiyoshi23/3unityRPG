@@ -5,6 +5,10 @@ using UnityEngine;
 public class AutoDoor : MonoBehaviour {
 
     Animator anim;
+    
+    public bool conditionNeedItem = false;
+
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -18,7 +22,17 @@ public class AutoDoor : MonoBehaviour {
     {
         if (other.name == "Player")
         {
-            anim.SetBool("IsOpen", true);
+            if (conditionNeedItem == false)
+            {
+                anim.SetBool("IsOpen", true);
+            }
+            else
+            {
+                if (GameManager.instance.inventory.HasItem())
+                {
+                    anim.SetBool("IsOpen", true);
+                }
+            }
         }
     }
 
