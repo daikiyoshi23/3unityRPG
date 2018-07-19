@@ -39,6 +39,7 @@ public class EnemyController : MonoBehaviour {
                 anim.Play("Allosaurus_Die");
                 Destroy(boxCollider);
                 Destroy(hpObj);
+                Destroy(gameObject, 5.0f);
             }
         } 
     }
