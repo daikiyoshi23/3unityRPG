@@ -10,10 +10,14 @@ public class EnemyController : MonoBehaviour {
     public int hp = 100;
     public Image hpGauge;
     int fullHp;
+    int attackPower;
+    GameObject hpObj;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animation>();
         boxCollider = GetComponent<BoxCollider>();
+        hpObj = transform.Find("HP").gameObject;
         fullHp = hp;
 	}
 	
@@ -26,13 +30,15 @@ public class EnemyController : MonoBehaviour {
     {
         if(other.name == "cutter01")
         {
-            hp -= 50;
+            attackPower = other.GetComponent<Weapon>().power;
+            hp -= attackPower;
             hpGauge.fillAmount = (float)hp / fullHp;
             print(hp);
             if (hp <= 0)
             {
                 anim.Play("Allosaurus_Die");
                 Destroy(boxCollider);
+                Destroy(hpObj);
             }
         } 
     }
