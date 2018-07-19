@@ -5,7 +5,7 @@ using UnityEngine;
 public class AutoDoor : MonoBehaviour {
 
     Animator anim;
-    Inventory inventory = new Inventory();
+    
     public bool conditionNeedItem = false;
 
 
@@ -28,7 +28,7 @@ public class AutoDoor : MonoBehaviour {
             }
             else
             {
-                if (inventory.HasItem())
+                if (GameManager.instance.inventory.HasItem())
                 {
                     anim.SetBool("IsOpen", true);
                 }
