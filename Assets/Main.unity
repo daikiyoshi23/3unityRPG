@@ -545,6 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cc4cb7f44cb9d4fb754fb3a2446453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemType: 0
 --- !u!135 &410372669
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -643,6 +644,11 @@ Prefab:
     - target: {fileID: 4443347425648630, guid: f14168e55190b0845aa837817974d30f, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877233675299778, guid: f14168e55190b0845aa837817974d30f,
+        type: 2}
+      propertyPath: item
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f14168e55190b0845aa837817974d30f, type: 2}
